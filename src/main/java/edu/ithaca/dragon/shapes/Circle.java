@@ -2,13 +2,11 @@ package edu.ithaca.dragon.shapes;
 
 public class Circle {
     public double radius;
-    public String IllegalArgumentException;{
-        if (radius< 0){
-            throw new IllegalArgumentException("make radius greater than 0");
 
-        }
-    }
     public Circle(double radius){
+        if (radius < 0){
+            throw new IllegalArgumentException("Make radius Greater than 0");
+        }
         this.radius = radius;
     }
 
