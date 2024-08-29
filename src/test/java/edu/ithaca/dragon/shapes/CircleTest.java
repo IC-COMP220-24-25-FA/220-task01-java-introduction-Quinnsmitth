@@ -31,12 +31,14 @@ public class CircleTest {
     @Test
     public void doubleSizeTest(){
         Circle newCircle = new Circle(1);
+
         newCircle.doubleSize();
         assertEquals(1.41, newCircle.radius,.1);
 
         newCircle = new Circle(10);
         newCircle.doubleSize();
         assertEquals(14.1, newCircle.radius,.1);
+
         newCircle.doubleSize();
         newCircle =  new Circle(5);
         newCircle.doubleSize();
@@ -44,6 +46,19 @@ public class CircleTest {
 
 
         
+
+    }
+    @Test
+    public void longestLineWithinTest(){
+        Circle newCircle = new Circle(5);
+        assertEquals(10, newCircle.longestLineWithin(),.1);
+
+        newCircle = new Circle(7);
+        assertEquals(14,newCircle.longestLineWithin(),.1);
+
+        newCircle = new Circle(4.25);
+        assertEquals(8.5,newCircle.longestLineWithin(),.1);
+
 
     }
 
