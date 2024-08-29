@@ -5,8 +5,8 @@ public class Rectangle {
     public double width;
 
     public Rectangle(double length, double width){
-        if(this.length<0 || this.width <0){
-            throw 
+        if(this.length<=0 || this.width <=0){
+            throw new IllegalArgumentException("One measurement is less than 0 try again.");
         }
         this.length = length;
         this.width = width;
