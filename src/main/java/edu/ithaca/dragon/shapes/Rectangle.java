@@ -5,6 +5,9 @@ public class Rectangle {
     public double width;
 
     public Rectangle(double length, double width){
+        if(this.length<0 || this.width <0){
+            throw 
+        }
         this.length = length;
         this.width = width;
     }

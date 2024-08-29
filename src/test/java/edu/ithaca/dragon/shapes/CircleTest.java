@@ -64,7 +64,7 @@ public class CircleTest {
 
     @Test
     public void TestConstructorError(){
-        assertThrows(IllegalArgumentException.class, () -> new Circle(-1));
+        assertThrows(IllegalArgumentException.class, () -> new Circle(0));
     }
 
 
