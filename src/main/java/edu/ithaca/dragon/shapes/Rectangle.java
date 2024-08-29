@@ -14,11 +14,11 @@ public class Rectangle {
     }
 
     public void doubleSize(){
-        throw new RuntimeException("Not implemented yet");
+        this.length *= 2;
     }
 
     public double longestLineWithin(){
-        throw new RuntimeException("Not implemented yet");
+        return Math.sqrt((Math.pow(this.length,2)) + (Math.pow(this.width,2)));
     }
     
 }
