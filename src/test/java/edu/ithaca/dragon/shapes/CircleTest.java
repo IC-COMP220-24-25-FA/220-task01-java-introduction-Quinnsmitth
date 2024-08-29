@@ -39,6 +39,7 @@ public class CircleTest {
         assertEquals(20, newCircle.radius);
         newCircle.doubleSize();
         newCircle =  new Circle(.5);
+        newCircle.doubleSize();
         assertEquals(1,newCircle.radius);
 
 
