@@ -2,7 +2,6 @@ package edu.ithaca.dragon.shapes;
 
 public class Circle {
     private double radius;
-
     /**
      * @throws IllegalArgumentException if radius is not a positive number
      */
@@ -14,7 +13,7 @@ public class Circle {
      * @return the area of this circle
      */
     public double calcArea(){
-        throw new RuntimeException("Not implemented yet");
+        return Math.pow(this.radius,2)*Math.PI;
     }
 
     /**
