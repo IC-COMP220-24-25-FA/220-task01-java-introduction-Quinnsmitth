@@ -20,7 +20,7 @@ public class Circle {
      * @post doubles the size of this circle
      */
     public void doubleSize(){
-        this.radius *= 2;
+        this.radius *= Math.sqrt(2);
         
     }
 
