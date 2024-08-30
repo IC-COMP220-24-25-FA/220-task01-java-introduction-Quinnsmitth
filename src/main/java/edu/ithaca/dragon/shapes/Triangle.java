@@ -13,7 +13,7 @@ public class Triangle {
         return (height*base)*.5;
     }
     public void doubleSize(){
-        
+        height*=2;
     }
 
 }
