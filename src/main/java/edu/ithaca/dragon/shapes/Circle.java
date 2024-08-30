@@ -1,7 +1,7 @@
 package edu.ithaca.dragon.shapes;
 
 public class Circle {
-    public double radius;
+    private double radius;
 
     public Circle(double radius){
         if (radius < 0){

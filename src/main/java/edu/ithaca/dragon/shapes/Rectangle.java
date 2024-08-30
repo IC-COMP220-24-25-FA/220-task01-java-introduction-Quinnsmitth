@@ -1,11 +1,11 @@
 package edu.ithaca.dragon.shapes;
 
 public class Rectangle {
-    public double length;
-    public double width;
+    private double length;
+    private double width;
 
     public Rectangle(double length, double width){
-        if(this.length<=0 || this.width <=0){
+        if(this.length<0 || this.width <0){
             throw new IllegalArgumentException("One measurement is less than 0 try again.");
         }
         this.length = length;

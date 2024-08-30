@@ -33,16 +33,16 @@ public class CircleTest {
         Circle newCircle = new Circle(1);
 
         newCircle.doubleSize();
-        assertEquals(1.41, newCircle.radius,.1);
+        assertEquals(6.282, newCircle.calcArea(),.1);
 
         newCircle = new Circle(10);
         newCircle.doubleSize();
-        assertEquals(14.1, newCircle.radius,.1);
+        assertEquals(628.3, newCircle.calcArea(),.1);
 
         newCircle.doubleSize();
         newCircle =  new Circle(5);
         newCircle.doubleSize();
-        assertEquals(7.05,newCircle.radius,.1);
+        assertEquals(157.08,newCircle.calcArea(),.1);
 
 
         

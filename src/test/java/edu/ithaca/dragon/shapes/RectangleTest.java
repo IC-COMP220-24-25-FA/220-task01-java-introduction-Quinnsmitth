@@ -22,17 +22,17 @@ public class RectangleTest {
     }
     @Test 
     public void doubleSizeTest(){
-        Rectangle newRectangle = new Rectangle(1,4);
+        Rectangle newRectangle = new Rectangle(2,10);
         newRectangle.doubleSize();
-        assertEquals(2,newRectangle.length,.1);
+        assertEquals(40,newRectangle.calcArea(),.1);
 
         newRectangle = new Rectangle(.5,8);
         newRectangle.doubleSize();
-        assertEquals(1,newRectangle.length,.1);
+        assertEquals(8,newRectangle.calcArea(),.1);
 
         newRectangle = new Rectangle(10,4);
         newRectangle.doubleSize();
-        assertEquals(20,newRectangle.length,.1);
+        assertEquals(80,newRectangle.calcArea(),.1);
     }
     @Test
     public void longestLineWithinTest(){
