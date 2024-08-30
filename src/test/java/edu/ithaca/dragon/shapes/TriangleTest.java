@@ -20,6 +20,7 @@ public class TriangleTest {
         assertEquals(4.375, triangle1.calcArea(),.1);
 
     }
+
     @Test
     public void doubleSize(){
         Triangle triangle1 = new Triangle(2,4);
@@ -34,5 +35,17 @@ public class TriangleTest {
         triangle1.doubleSize();
         assertEquals(9.03,triangle1.calcArea(),.1);
 
+    }
+
+    @Test
+    public void longestLineWithin(){
+        Triangle triangle1 = new Triangle(2,3);
+        assertEquals(3.61,triangle1.longestLineWithin(),.1);
+
+        triangle1 = new Triangle(5,5);
+        assertEquals(7.07, triangle1.longestLineWithin(),.1);
+
+        triangle1 = new Triangle(2.4,5.4);
+        assertEquals(5.91, triangle1.longestLineWithin(),.1);
     }
 }

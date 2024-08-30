@@ -9,11 +9,17 @@ public class Triangle {
         base = baseIn;
 
     }
+
     public double calcArea(){
         return (height*base)*.5;
     }
+
     public void doubleSize(){
         height*=2;
+    }
+
+    public double longestLineWithin(){
+       return Math.sqrt((Math.pow(base,2)) + (Math.pow(height,2)));
     }
 
 }
