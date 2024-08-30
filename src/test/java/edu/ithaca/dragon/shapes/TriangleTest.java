@@ -48,4 +48,8 @@ public class TriangleTest {
         triangle1 = new Triangle(2.4,5.4);
         assertEquals(5.91, triangle1.longestLineWithin(),.1);
     }
+    @Test
+    public void TestConstructorError(){
+        assertThrows(IllegalArgumentException.class, () -> new Triangle(-1,-1));
+    }
 }
