@@ -42,7 +42,16 @@ public class FunctionPractice {
      * @return true if the data collected shows the dog is good, false if bad dog today
      */
     public static boolean isGoodDog(int yearsOld, int daysSinceShoesChewed, boolean fetchedThePaperToday){
-        throw new RuntimeException("Not Implemented");
+        if (yearsOld <= 1){
+            return true;
+        }
+        if ((yearsOld >1) & (daysSinceShoesChewed >= 10)){
+            return true;
+        }
+        if(fetchedThePaperToday == true){
+            return true;
+        }
+        return false;
     }
 
     /**
