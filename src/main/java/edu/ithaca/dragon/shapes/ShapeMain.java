@@ -18,10 +18,10 @@ public class ShapeMain {
             for(int index = 0; index < rectList.size(); index++){
                 System.out.println(rectList.get(index));
             }
-            Scanner scrn = new Scanner(System.in);
-            System.out.println("Pick a rectangle you want to double:");
-            int answer = scrn.nextInt();
-            scrn.close();
+                Scanner scrn = new Scanner(System.in);
+                System.out.println("Pick a rectangle you want to double:");
+                int answer = scrn.nextInt();
+                scrn.close();
 
             if (answer == 1 ){
                rect1.doubleSize();
@@ -42,7 +42,7 @@ public class ShapeMain {
             for(int index = 0; index < rectList.size(); index++){
                 System.out.println(rectList.get(index));
             }
-        
+    
             
         
 
