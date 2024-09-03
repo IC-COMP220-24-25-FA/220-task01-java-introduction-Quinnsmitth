@@ -9,7 +9,23 @@ public class FunctionPractice {
      * @throws IllegalArgumentException if any of the numbers is negative
      */
     public static int largestOfThree(int first, int second, int third){
-        throw new RuntimeException("Not Implemented");
+        if (first < 0 || second < 0|| third < 0){
+            throw new IllegalArgumentException("One of your numbers is less than zero");
+        }
+        if((first > second) & (first > third)){
+            return first;
+        }
+        if ((second > first) & (second> third)){
+            return second;
+        }
+        if ((third > first) & (third > second)){
+            return third;
+        }
+        if ((first == second)|| (first == third)){
+            return first;
+        }
+        return third;
+
     }
     
     /**
