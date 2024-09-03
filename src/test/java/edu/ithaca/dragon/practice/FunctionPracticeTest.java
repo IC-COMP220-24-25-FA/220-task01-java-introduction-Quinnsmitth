@@ -5,8 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
+import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
+
+import edu.ithaca.dragon.shapes.Rectangle;
 
 public class FunctionPracticeTest {
 
@@ -36,6 +39,17 @@ public class FunctionPracticeTest {
         assertTrue(FunctionPractice.isGoodDog(1,1,false));
         assertFalse(FunctionPractice.isGoodDog(2,1,false));
         assertFalse(FunctionPractice.isGoodDog(4,1,false));
+    }
+    @Test
+    public void findFirstLargest(){
+        ArrayList<Integer> list1 = new ArrayList<>(); 
+        list1.add(1);
+        list1.add(3);
+        assertEquals(1,FunctionPractice.findFirstLargest(list1));
+        list1.add(3);
+        assertEquals(1,FunctionPractice.findFirstLargest(list1));
+        list1.add(3);
+        assertEquals(1,FunctionPractice.findFirstLargest(list1));
     }
     
 }
