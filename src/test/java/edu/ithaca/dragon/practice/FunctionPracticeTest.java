@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
@@ -66,6 +67,14 @@ public class FunctionPracticeTest {
         assertEquals(3,FunctionPractice.findLastLargest(list1));
         list1 = new ArrayList<>();
         assertEquals(-1,FunctionPractice.findLastLargest(list1));
+    }
+    @Test
+    public void findFirstMostOccurencesOfLetter(){
+        List<String> words;
+        words = new ArrayList<String>();
+        words.add("hi");
+        assertEquals("hello",FunctionPractice.findFirstMostOccurencesOfLetter(words, "l"));
+
     }
     
 }
