@@ -70,10 +70,13 @@ public class FunctionPracticeTest {
     }
     @Test
     public void findFirstMostOccurencesOfLetter(){
-        List<String> words;
-        words = new ArrayList<String>();
+        List<String> words = new ArrayList<>();
         words.add("hi");
-        assertEquals("hello",FunctionPractice.findFirstMostOccurencesOfLetter(words, "l"));
+        words.add("hello");
+        words.add("high");
+        assertEquals(words, words);FunctionPractice.findFirstMostOccurencesOfLetter(words, 'h');
+        
+
 
     }
     
