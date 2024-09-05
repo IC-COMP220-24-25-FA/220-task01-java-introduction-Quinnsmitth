@@ -1,6 +1,6 @@
 package edu.ithaca.dragon.shapes;
 
-public class Triangle {
+public class Triangle implements Shape{
     private double height;
     private double base;
 
@@ -23,6 +23,10 @@ public class Triangle {
 
     public double longestLineWithin(){
        return Math.sqrt((Math.pow(base,2)) + (Math.pow(height,2)));
+    }
+    
+    public String toString(){
+        return "Area: "+this.calcArea()+"    Longest Line Within: "+this.longestLineWithin();
     }
 
 }

@@ -4,44 +4,36 @@ import java.util.Scanner;
 public class ShapeMain {
     
     public static void main(String[] args){
-        ArrayList<Rectangle> rectList = new ArrayList<>();
-        Rectangle rect1 = new Rectangle(1,1);
-        Rectangle rect2 = new Rectangle(1,2);
-        Rectangle rect3 = new Rectangle(1,3);
-        Rectangle rect4 = new Rectangle(1,4);
-        Rectangle rect5 = new Rectangle(1,5);
-        rectList.add(rect1);
-        rectList.add(rect2);
-        rectList.add(rect3);
-        rectList.add(rect4);
-        rectList.add(rect5);
-            for(int index = 0; index < rectList.size(); index++){
-                System.out.println(rectList.get(index));
-            }
-                Scanner scrn = new Scanner(System.in);
-                System.out.println("Pick a rectangle you want to double:");
-                int answer = scrn.nextInt();
-                scrn.close();
+        ArrayList<Shape> shapeList = new ArrayList<>();
+        int max = 3;
+        int min = 1;
+        int x  = 0;
 
-            if (answer == 1 ){
-               rect1.doubleSize();
+        while(x > 10){
+            int num =  (int) Math.floor(Math.random() * (max - min + 1) + min);
+
+            if (num == 1){
+                Circle circle = new Circle((int) Math.floor(Math.random() * (100 - 1 + 1) + 1));
+                shapeList.add(circle);
             }
-            if (answer == 2 ){
-                rect2.doubleSize();
-             }
-            if (answer == 3 ){
-            rect3.doubleSize();
+            if (num == 2){
+                Rectangle rectangle = new Rectangle((int) Math.floor(Math.random() * (100 - 1 + 1) + 1), (int) Math.floor(Math.random() * (100 - 1 + 1) + 1));
+                shapeList.add(rectangle);
             }
-            if (answer == 4){
-                rect4.doubleSize();
+            if (num == 3){
+                Triangle triangle = new Triangle((int) Math.floor(Math.random() * (100 - 1 + 1) + 1), (int) Math.floor(Math.random() * (100 - 1 + 1) + 1));
+                shapeList.add(triangle);
+                System.out.println(triangle);
             }
-            if (answer == 5 ){
-            rect5.doubleSize();
-            }
-          
-            for(int index = 0; index < rectList.size(); index++){
-                System.out.println(rectList.get(index));
-            }
+        }
+
+        for (Shape shape : shapeList) {
+            System.out.println(shape);
+        }
+                // Scanner scrn = new Scanner(System.in);
+                // // System.out.println("Pick a rectangle you want to double:");
+                // // int answer = scrn.nextInt();
+                // // scrn.close();
     
             
         

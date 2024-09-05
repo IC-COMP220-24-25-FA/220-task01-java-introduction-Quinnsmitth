@@ -74,8 +74,8 @@ public class FunctionPracticeTest {
         words.add("hi");
         words.add("hello");
         words.add("high");
-        assertEquals(words, words);FunctionPractice.findFirstMostOccurencesOfLetter(words, 'h');
-        
+        assertEquals("high",FunctionPractice.findFirstMostOccurencesOfLetter(words, 'h'));
+
 
 
     }
