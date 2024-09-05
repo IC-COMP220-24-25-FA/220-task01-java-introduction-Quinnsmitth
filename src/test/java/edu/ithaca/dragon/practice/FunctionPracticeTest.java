@@ -9,9 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
-
-import edu.ithaca.dragon.shapes.Rectangle;
-
 public class FunctionPracticeTest {
 
     @Test
