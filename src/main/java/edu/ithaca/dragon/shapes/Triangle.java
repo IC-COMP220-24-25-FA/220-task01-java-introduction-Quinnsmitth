@@ -24,9 +24,9 @@ public class Triangle implements Shape{
     public double longestLineWithin(){
        return Math.sqrt((Math.pow(base,2)) + (Math.pow(height,2)));
     }
-    
+
     public String toString(){
-        return "Area: "+this.calcArea()+"    Longest Line Within: "+this.longestLineWithin();
+        return " Triangle Area: "+this.calcArea()+"    Longest Line Within: "+this.longestLineWithin();
     }
 
 }

@@ -23,9 +23,9 @@ public class Rectangle implements Shape {
     public double longestLineWithin(){
         return Math.sqrt((Math.pow(this.length,2)) + (Math.pow(this.width,2)));
     }
-    
+
     public String toString(){
-        return "Area: "+this.calcArea()+"    Longest Line Within: "+this.longestLineWithin();
+        return "Rectangle Area: "+this.calcArea()+"    Longest Line Within: "+this.longestLineWithin();
     }
     
 }
